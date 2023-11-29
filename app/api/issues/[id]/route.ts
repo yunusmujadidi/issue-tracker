@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { IssueSchema } from "@/app/validationSchema";
 import prisma from "@/prisma/client";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../../auth/[...nextauth]/route";
+import authOptions from "@/app/auth/authOptions";
 import { PatchIssueSchema } from "@/app/validationSchema";
 
 interface Props {
